@@ -3,14 +3,14 @@
 
 from __future__ import unicode_literals
 
-import collections
+import collections.abc
 
 from jujubundlelib import pyutils
 
 
 def isdict(value):
     """Report whether the given value is a dict-like object."""
-    return isinstance(value, collections.Mapping)
+    return isinstance(value, collections.abc.Mapping)
 
 
 def islist(value):
